@@ -1,0 +1,8 @@
+flask
+flask-cors
+opencv-python
+numpy
+pytesseract
+Pillow
+scikit-learn
+werkzeug
