@@ -57,7 +57,7 @@ class DetectorService:
         authenticity_score = ml_score * 100
         
         # Classify
-        prediction = "REAL" if ml_score >= self.threshold else "FAKE"
+        prediction = "REAL" if ml_score >= self.threshold else "Manual Review" if 0.45 < ml_score < 0.51 else "FAKE"
         is_uncertain = abs(ml_score - self.threshold) < 0.1
         
         return {

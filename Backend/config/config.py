@@ -11,8 +11,8 @@ class Config:
     ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'bmp', 'tiff'}
     
     # Model settings
-    MODEL_PATH = os.path.join(BASE_DIR, 'saved_models', 'aadhaar_detector.pkl')
-    THRESHOLD = 0.5
+    MODEL_PATH = os.path.join(BASE_DIR, 'saved_models', 'aadhaar_only_model_TEXT.pkl')
+    THRESHOLD = 0.51
     
     # Training data paths
     REAL_IMAGES_FOLDER = os.path.join(BASE_DIR, 'data', 'real')
